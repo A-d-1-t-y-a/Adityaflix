@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 export default function Animations(props) {
   return (
     <motion.div  initial={{x:-200}}
-    animate={{x:0}} className={`relative h-1/2 w-${props.w} ${props.m}  z-0 bg-black p-2 overflow-hidden `}>
+    animate={{x:0}} className={`relative h-1/2 w-full   z-0 bg-black p-2 overflow-hidden `}>
     <motion.div initial={{y:-200}}
               animate={{y:0}} className=" z-10 w-full h-full bg-black p-1 ">
       <p className='text-white text-xl font-serif font-bold mx-auto '>{props.content}</p>

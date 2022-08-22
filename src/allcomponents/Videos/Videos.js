@@ -3,10 +3,10 @@ import { motion } from "framer-motion"
 
 export default function Videos() {
   return (
-    <div className="flex flex-wrap w-full">
+    <div className="flex  w-full">
 
-      <div className="flex items-center fixed -z-10 top-0 justify-center w-full h-[100vh] bg-black text-red-600 capitalize font-serif font-medium text-6xl">videos </div>
-      <div className="flex mt-[80vh]">
+      <div className="flex w-full items-center fixed -z-10 top-0 justify-center  h-[100vh] bg-black text-red-600 capitalize font-serif font-medium text-6xl">videos </div>
+      <div className="flex flex-wrap mt-[80vh]">
       {[1,2,3,4].map((i)=>(<motion.div key={i}>
             {videos.map((video, index) => (
                       <motion.div

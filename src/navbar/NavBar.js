@@ -9,13 +9,13 @@ export default function NavBar() {
               <div className='mx-4 p-2 text-4xl'>Aflix</div>
           </div>
 
-          <div className='flex text-xl bg-black'>
+          <div className='flex flex-wrap text-xl bg-black'>
 
-            <button className='px-5 flex items-center text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-2 mx-1'><Link to="/">Home</Link></button>
-            <button className='px-5 flex items-center text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-2 mx-1'><Link to="/Apresenting">A presenting</Link></button>
-            <button className='px-5 flex items-center text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-2 mx-1'><Link to="/videos">Videos</Link></button>
-            <button className='px-5 flex items-center text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-2 mx-1'><Link to="/photos">Photos|Memes</Link></button>
-            <button className='px-5 flex items-center text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-2 mx-1'><Link to="/wishes">Wishes</Link></button>
+            <button className='px-5  text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-1.5 mx-1'><Link to="/">Home</Link></button>
+            <button className='px-5  text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-1.5 mx-1'><Link to="/Apresenting">A presenting</Link></button>
+            <button className='px-5  text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-1.5 mx-1'><Link to="/videos">Videos</Link></button>
+            <button className='px-5  text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-1.5 mx-1'><Link to="/photos">Photos|Memes</Link></button>
+            <button className='px-5  text-center bg-black shadow-inner hover:bg-red-500 transistion duration-300 delay-75 py-1.5 mx-1'><Link to="/wishes">Wishes</Link></button>
           
           </div>
 

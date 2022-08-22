@@ -98,7 +98,7 @@ export default function Home() {
 
      <Slidervideos title={"my uploads"} videos={videos} comment={"this is an aditya program"}/>
      <Slidervideos title={"special"} videos={videos} comment={"this is an aditya program"}/>
-     <motion.div className="w-full h-[90vh] overflow-scroll flex items-end  bg-black">
+     <motion.div className="w-full h-[90vh] overflow-x-scroll flex items-end  bg-black">
            <Slidervideos title={"crazy"} videos={videos} comment={"this is an aditya program"}/>
      </motion.div>
      <Slidervideos title={"comdey"} videos={videos} comment={"this is an aditya program"}/>

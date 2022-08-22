@@ -56,12 +56,12 @@ export default function Banner() {
 
   return (
 
-    <div className="flex w-full  mx-auto my-10">
+    <div className="flex w-full  mx-auto my-36">
 
     {/* THIS IS FOR THE LEFT SIDE OF THE INPUT */}
       <div className="w-1/2 flex mx-10 items-center justify-center ">
         <div
-          className="hover:bg-red-500 flex cursor-pointer items-center justify-center bg-transparent"
+          className=" flex h-full bg-black cursor-pointer items-center rounded-lg justify-center bg-transparent hover:shadow-inner hover:shadow-black"
           onClick={leftbutton}
         >
           <svg
@@ -80,23 +80,23 @@ export default function Banner() {
         </div>
 
         <div className="w-full mx-2 flex-1">
-          <div className=" w-full h-80 rounded-3xl overflow-y-hidden">
+          <div className=" w-full h-80 rounded-3xl shadow-inner  overflow-y-hidden">
             <div
               className="transition ease-in duration-1000 delay-200"
               style={{ transform: `translateY(${-index *11.1}%)` }}
             >
               {images.map((backgroundColor, index) => (
                   <div
-                      className={cx("inline-block w-full shadow-inherit  h-80 ",backgroundColor)}
+                      className={cx("inline-block w-full shadow-inner  h-80 ")}
                       key={index}
                       // style={{ backgroundColor }}
-                    ><div className="overflow-y-auto h-80  ">
+                    ><div className="overflow-y-auto h-80 shadow-inner   ">
                         {comboArray[index].map((item,idx)=>(
                           <div className={cx("m-1 flex items-center justify-center text-2xl  rounded-full text-gray-500 ")} key={idx*3}>
                               {item==="user pics"&&<input className="transistion duration-500 ease-in text-center my-28 p-2 rounded-xl" onChange={(e)=>{setinputdata((prev)=>({...prev,"photo":e.target.value }))}} type="file" accept="image/*"  placeholder="here you can upload a image man"/>}
                               {item==="your wish"&&<input className=" text-center my-28 p-2 rounded-xl" onChange={(e)=>{setinputdata((prev)=>({...prev,"inputwishes":e.target.value }))}} placeholder="enter a your wishes"/>}
                               {item==="input video"&&<input className=" text-center my-28 p-2 rounded-xl" onChange={(e)=>{setinputdata((prev)=>({...prev,"video":e.target.value }))}} placeholder="enter a video"/>}
-                              {item!=="your wish"&&item!=="input video"&&item!=="user pics"&&<button key={idx*100} className="flex items-center justify-center transistion duration-500 opacity-50 hover:opacity-100 " onClick={()=>newdata(item,index)}>{item}</button>}
+                              {item!=="your wish"&&item!=="input video"&&item!=="user pics"&&<button key={idx*100} className="flex items-center justify-center transistion duration-500 opacity-50 hover:opacity-100 border-2 p-4 rounded-lg shadow-inner shadow-black my-2" onClick={()=>newdata(item,index)}>{item}</button>}
                           </div>))}
                       </div>
                   </div>
@@ -121,7 +121,7 @@ export default function Banner() {
         </div>
 
         <div
-          className=" flex items-center hover:bg-red-500 cursor-pointer bg-transparent"
+          className=" flex h-full items-center hover:shadow-inner rounded-lg hover:shadow-black cursor-pointer bg-transparent"
           onClick={rightbutton}
         >
           <svg
