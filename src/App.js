@@ -14,7 +14,7 @@ function App() {
         <NavBar/>
               <Switch>
 
-                <Route path="/" exact>
+                <Route path="/Adityaflix" exact>
                     <Home/>
                 </Route>
 
