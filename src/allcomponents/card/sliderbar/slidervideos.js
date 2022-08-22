@@ -7,6 +7,7 @@ export default function Slidervideos(props) {
   useEffect(() => {
       setw(-carousel.current.scrollWidth+carousel.current.offsetWidth)
       }, []);
+
   return (
     <motion.div className=" flex flex-col scroll-smooth cursor-grabbing my-10">
               <motion.div className="flex-1 flex-start text-left m-2 shadow-2xl text-2xl font-extrabold font-serif select-none capitalize">{props.title}</motion.div>
