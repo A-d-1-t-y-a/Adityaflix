@@ -17,22 +17,22 @@ export default function Home() {
     }
   };
   // to here that new
-  const myref=useRef();
-  const [sr,setsr]=useState()
-  const myref2=useRef();
-  const [sr2,setsr2]=useState()
-  console.log("this is for the aditya at last tag",sr)
-  console.log("this is for the after banner tag",sr2)
-  useEffect(()=>{
-    const observer=new IntersectionObserver((entries)=>{
-    const ent=entries[0];
-    const en=entries[1];
-    setsr(ent.isIntersecting)
-    setsr2(en.isIntersecting)
-    })
-    observer.observe(myref.current)
-    // observer.observe(myref2.current)
-  },[])
+  // const myref=useRef();
+  // const [sr,setsr]=useState()
+  // const myref2=useRef();
+  // const [sr2,setsr2]=useState()
+  // console.log("this is for the aditya at last tag",sr)
+  // console.log("this is for the after banner tag",sr2)
+  // useEffect(()=>{
+  //   const observer=new IntersectionObserver((entries)=>{
+  //   const ent=entries[0];
+  //   const en=entries[1];
+  //   setsr(ent.isIntersecting)
+  //   setsr2(en.isIntersecting)
+  //   })
+  //   observer.observe(myref.current)
+  //   // observer.observe(myref2.current)
+  // },[])
   //to here that new scrolling code 
   useEffect(() => {
     resttimeout();
@@ -48,7 +48,7 @@ export default function Home() {
     };
   }, [index]);
   return (
-    <>
+    <div className="flex flex-col w-full">
     {/* this is a banner for here onwards */}
 
       <div className="bg-red-500 mx-auto w-full h-[88vh] overflow-hidden">
@@ -96,14 +96,14 @@ export default function Home() {
 
     {/* to here the banner code  */}
 
-     <Slidervideos ref={myref2}  title={"my uploads"} videos={videos} comment={"this is an aditya program"}/>
+     <Slidervideos title={"my uploads"} videos={videos} comment={"this is an aditya program"}/>
      <Slidervideos title={"special"} videos={videos} comment={"this is an aditya program"}/>
      <motion.div className="w-full h-[90vh] overflow-scroll flex items-end  bg-black">
            <Slidervideos title={"crazy"} videos={videos} comment={"this is an aditya program"}/>
      </motion.div>
      <Slidervideos title={"comdey"} videos={videos} comment={"this is an aditya program"}/>
      <Slidervideos title={"wild thinking"} videos={videos} comment={"this is an aditya program"}/>
-     <div ref={myref}>this is aditya</div>
-    </>
+     {/* <div ref={myref}>this is aditya</div> */}
+    </div>
   );
 }
