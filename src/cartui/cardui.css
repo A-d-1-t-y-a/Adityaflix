@@ -1,0 +1,86 @@
+.companybackground{
+    background-color: black;
+    border:0.5vh solid white;
+    width:98%;
+    border-radius:3vw;
+    margin: auto;
+    display:flex;
+    position: relative;
+    justify-content:space-between ;
+    box-sizing: border-box;
+}
+.companyname{
+    border-radius: 5px;
+    color:red;
+    font-size:10vh;
+    font-style: italic;
+    font-weight: bolder;
+    border-radius:3vw;
+    position: relative;
+    padding:1vh;
+}
+.log{
+    box-sizing: border-box;
+    background-color:navy;
+    border-radius: 20%;
+
+    color:white;
+    font-size:40px;
+    font-style: italic;
+    font-weight: bolder;
+    position: relative;
+    margin:3vh;
+    justify-content: space-between;
+    /* justify-content: space-between; */
+}
+.menu{
+    background-color:lightslategray;
+    border-top-left-radius: 30%;
+    border-bottom-left-radius:30% ;
+    color:white;
+    font-size:40px;
+    font-style: italic;
+    font-weight: bolder;
+    box-sizing: border-box;
+    line-height : 14vh;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+}
+.menuitems{
+    list-style: none;
+    color: white;
+    position: absolute;
+    top:80%;
+    left:-1%;
+    font-size:200%;
+    width:20%;
+    justify-content: center;
+    z-index: 10;
+    visibility:visible;
+}
+li{
+ padding:5% 6%;
+ color:white;
+ margin:2% auto;
+ border-radius:6%;
+ box-shadow: 2px 2px 5px white;
+}
+.menubar-enter{
+   width: 0%;
+   font-size: 0px;
+}
+.menubar-enter-active{
+    font-size:40px;
+    width:20%;
+    transition:width 5s, font-size 5s;
+}
+.menubar-exit{
+    width:40px;
+    font-size:50px;
+}
+.menubar-exit-active{
+    width: 0%;
+    font-size: 0px;
+    transition:width 30ms, font-size 30ms;
+}
