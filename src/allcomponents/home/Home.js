@@ -51,13 +51,13 @@ export default function Home() {
     <div className="flex flex-col w-full">
     {/* this is a banner for here onwards */}
 
-      <div className="bg-red-500 mx-auto w-full h-[88vh] overflow-hidden">
+      <div className=" mx-auto w-full h-[88vh] overflow-hidden">
             <div
               className="transistion duration-1000 ease-in"
               style={{ transform: `translateY(${-index * 11.1}%)` }}
             >
               {images.map((backgroundColor, index) => (
-                <div  className={cx("inline-block w-full shadow-inherit h-[88vh]",backgroundColor)} key={index} ></div>
+                <div  className={cx("inline-block w-full shadow-inherit h-[88vh]")} key={index} ><img src={'https://firebasestorage.googleapis.com/v0/b/adventure-game-94a52.appspot.com/o/20210809_203547.jpg?alt=media&token=993958ea-2bc0-4896-8cef-95e30415b228'}  alt="aditya" /></div>
               ))}
             </div>
       </div>

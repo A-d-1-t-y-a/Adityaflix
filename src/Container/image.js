@@ -1,5 +1,5 @@
 export const images=[
- "bg-gradient-to-r from-green-300 via-blue-500 to-purple-600",
+ "tp1.jpg",
 "bg-gradient-to-tl from-pink-300 via-purple-300 to-indigo-400",
 "bg-gradient-to-r from-gray-700 via-gray-900 to-black",
 "bg-gradient-to-r from-indigo-200 via-red-200 to-yellow-100",
@@ -12,7 +12,7 @@ export const images=[
 
 export const img  = [
   {
-    src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+    src: "https://firebasestorage.googleapis.com/v0/b/adventure-game-94a52.appspot.com/o/20210809_203547.jpg?alt=media&token=993958ea-2bc0-4896-8cef-95e30415b228",
     width: 4,
     height: 3
   },

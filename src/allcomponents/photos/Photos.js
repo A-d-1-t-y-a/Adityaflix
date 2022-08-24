@@ -7,7 +7,7 @@ export default function Photos() {
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
 
-  const openLightbox = useCallback((event, { photo, index }) => {
+  const openLightbox = useCallback((event, { img, index }) => {
     setCurrentImage(index);
     setViewerIsOpen(true);
   }, []);
