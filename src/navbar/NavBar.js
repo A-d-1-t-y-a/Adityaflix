@@ -36,7 +36,7 @@ export default function NavBar() {
   return (
     <>
       <header
-        className={`flex justify-between w-full sticky text-black dark:text-white bg-white dark:bg-black shadow-md shadow-slate-400 dark:shadow-white`}
+        className={`flex justify-between w-full absolute z-10 text-black dark:text-white bg-white dark:bg-black shadow-md shadow-slate-400 dark:shadow-white`}
       >
         <Button
           className="p-5 mr-20 text-black dark:text-white  flex items-center"
@@ -45,7 +45,7 @@ export default function NavBar() {
          {menu?<MenuOpenIcon/>:<MenuIcon />}
         </Button>
         <Button className="p-5 text-black rounded-3xl text-ellipsis dark:text-white bg-white dark:bg-black shadow-md shadow-slate-400 dark:shadow-white flex items-center">
-          SundariFlix
+          FFlix
         </Button>
 
         <input
