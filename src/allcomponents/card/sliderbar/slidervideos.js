@@ -2,6 +2,7 @@ import React,{useState,useRef,useEffect} from "react";
 import {motion} from 'framer-motion';
 
 export default function Slidervideos(props) {
+
   const [w,setw]=useState(0);
   const carousel=useRef();
   useEffect(() => {
